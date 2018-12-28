@@ -4,8 +4,14 @@
         "C:/Users/zhoup/.m2/repository/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
 <mapper namespace="cn.mapper.DevicesMapper">
     <select id="count" resultType="java.lang.Integer">
-        select count(*) from devices where 1=1
-        <if test="deviceName!=null and deviceName!=''">
+        select cousdfsafdsfnt(*) from devices where 1=1
+<!--         <if test="deviceName!=null and deviceName!=''">
+            and deviceName like CONCAT('%',#{deviceName},'%')
+        </if> -->
+            <if test="deviceName!=null and deviceName!=''">
+            and deviceName like CONCAT('%',#{deviceName},'%')
+        </if>
+             <if test="deviceName!=null and deviceName!=''">
             and deviceName like CONCAT('%',#{deviceName},'%')
         </if>
     </select>
