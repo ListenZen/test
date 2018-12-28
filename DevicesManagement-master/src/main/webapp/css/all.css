@@ -1,0 +1,64 @@
+*{margin: 0;
+    padding: 0;}
+
+form{
+    width:80%;
+    margin:50px auto;
+    text-align: center;
+}
+
+.context{
+    width:100%;
+    height:auto;
+    border:1px solid gray;
+    margin:30px 0;
+}
+
+.devices{
+    width:100%;
+}
+.devices tr{
+    height:50px;
+    line-height: 50px;
+}
+.devices tr td{
+   text-align: center;
+}
+
+
+.repair{
+    width:80%;
+    margin:50px auto;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.repair h1{
+    height:100px;
+    line-height: 100px;
+    background: green;
+}
+
+.repairContext {
+    width:100%;
+}
+.repairContext tr{
+    height:30px;
+    line-height: 30px;
+}
+.repairContext tr td:nth-of-type(1),.repairContext tr td:nth-of-type(3){
+    width:20%;
+    text-align: center;
+}
+.repairContext tr td:nth-of-type(2),.repairContext tr td:nth-of-type(4){
+    width:30%;
+    padding-left: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.button{
+    text-align: center;
+}

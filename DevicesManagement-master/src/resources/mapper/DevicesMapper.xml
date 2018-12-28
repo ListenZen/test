@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "C:/Users/zhoup/.m2/repository/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mapper.DevicesMapper">
+    <select id="count" resultType="java.lang.Integer">
+        select count(*) from devices where 1=1
+        <if test="deviceName!=null and deviceName!=''">
+            and deviceName like CONCAT('%',#{deviceName},'%')
+        </if>
+    </select>
+    <select id="findAll" resultType="cn.entity.Devices">
+        select * from devices where 1=1
+        <if test="devices.deviceName!=null and devices.deviceName!=''">
+            and deviceName like CONCAT('%',#{devices.deviceName},'%')
+        </if>
+        order by purchaseTime desc limit #{pageBean.startRow},#{pageBean.pageSize}
+    </select>
+</mapper>
