@@ -29,6 +29,12 @@ public class DevicesController {
         model.addAttribute("deviceName",devices.getDeviceName());
         model.addAttribute("pageBean",pageBean);
         model.addAttribute("devices",list);
+
+
+
+
+
+        
         return "devices";
     }
 

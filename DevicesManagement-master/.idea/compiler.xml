@@ -9,5 +9,8 @@
         <module name="DevicesManagement" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DevicesManagement" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
